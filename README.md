@@ -21,20 +21,20 @@ Append this line at the end.
 ## Laravel Installation
 
 ```console
-$ make install # OS X & GMU/Linux users
+$ make install # OS X & GNU/Linux users
 $ docker-compose run --rm install # all users
 ```
 
 ## Start
 
 ```console
-$ make start # OS X & GMU/Linux users
+$ make start # OS X & GNU/Linux users
 $ docker-compose up -d php nginx postgres adminer # all users
 ```
 
 ## Stop
 
 ```console
-$ make stop # OS X & GMU/Linux users
+$ make stop # OS X & GNU/Linux users
 $ docker-compose down # all users
 ```
