@@ -66,3 +66,18 @@ You are now a Laravel Artisan. Try some commands.
 ```console
 $ php artisan help
 ```
+
+## Adminer
+
+You can access the graphical database administration panel at the following addresses:
+- http://127.0.0.1:80880/
+- http://localhost:80880/
+- http://laravel.local:80880/
+- http://www.laravel.local:80880/
+
+Credentials:
+- System    : PostgreSQL
+- Server    : postgres
+- Username  : root
+- Password  : root
+- Database  : laravel
