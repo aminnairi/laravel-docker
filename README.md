@@ -25,6 +25,8 @@ $ make install # OS X & GNU/Linux users
 $ docker-compose run --rm install # all users
 ```
 
+Laravel's source-files will be located under the `laravel` folder.
+
 ## Start
 
 ```console
