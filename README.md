@@ -1,5 +1,12 @@
 # laravel-docker
 
+## Featuring
+
+- PHP with FPM configured out-of-the-box.
+- NGINX configured to work in coordination with PHP FPM.
+- Laravel installer with a fix for the Laravel's logs & cache folder permissions issues.
+- PostgreSQL configured with automatic creation of the necessary database.
+
 ## Installation
 
 ```console
@@ -45,4 +52,11 @@ Go to either on of these addresses to display your website:
 ```console
 $ make stop # OS X & GNU/Linux users
 $ docker-compose down # all users
+```
+
+## Laravel Artisan Commands
+
+```console
+$ make shell # OS X & GNU/Linux users
+$ docker-compose exec php bash # all users
 ```

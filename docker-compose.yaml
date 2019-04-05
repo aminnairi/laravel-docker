@@ -5,7 +5,7 @@ services:
     container_name: composer
     image: composer
     user: 1000:1000
-    command: sh -c 'composer create-project --prefer-dist laravel/laravel laravel && chmod -R o+w laravel/storage/framework && chmod -R o+w laravel/storage/logs'
+    command: sh -c 'composer create-project --prefer-dist laravel/laravel laravel && chmod -R o+w laravel/storage/framework && chmod -R o+w laravel/storage/logs && sed -i "s/\(DB_CONNECTION=\).*/\1pgsql/" laravel/.env && sed -i "s/\(DB_HOST=\).*/\1postgres/" laravel/.env && sed -i "s/\(DB_PORT=\).*/\15432/" laravel/.env && sed -i "s/\(DB_DATABASE=\).*/\1laravel/" laravel/.env && sed -i "s/\(DB_USERNAME=\).*/\1root/" laravel/.env && sed -i "s/\(DB_PASSWORD=\).*/\1root/" laravel/.env'
     working_dir: /app
     volumes:
       - ./:/app
@@ -13,6 +13,7 @@ services:
   php:
     container_name: php
     build: php
+    working_dir: /usr/share/nginx/html
     ports:
       - 9000:9000
     volumes:

@@ -11,3 +11,6 @@ start: build
 
 stop:
 	docker-compose down --volumes --remove-orphans
+
+shell:
+	docker-compose exec php bash
