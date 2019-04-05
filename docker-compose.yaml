@@ -1,0 +1,49 @@
+version: '3'
+
+services:
+  install:
+    container_name: composer
+    image: composer
+    user: 1000:1000
+    command: sh -c 'composer create-project --prefer-dist laravel/laravel laravel && chmod -R o+w laravel/storage/framework && chmod -R o+w laravel/storage/logs'
+    working_dir: /app
+    volumes:
+      - ./:/app
+
+  php:
+    container_name: php
+    build: php
+    ports:
+      - 9000:9000
+    volumes:
+      - ./laravel:/usr/share/nginx/html
+
+  nginx:
+    container_name: nginx
+    depends_on:
+      - php
+    image: nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./laravel:/usr/share/nginx/html
+      - ./nginx/conf.d:/etc/nginx/conf.d
+  
+  postgres:
+    container_name: postgres
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: root
+      POSTGRES_USER: root
+      POSTGRES_DB: laravel
+
+  
+  adminer:
+    container_name: adminer
+    depends_on:
+      - postgres
+    image: adminer
+    ports:
+      - 8080:8080
