@@ -70,10 +70,10 @@ $ php artisan help
 ## Adminer
 
 You can access the graphical database administration panel at the following addresses:
-- http://127.0.0.1:80880/
-- http://localhost:80880/
-- http://laravel.local:80880/
-- http://www.laravel.local:80880/
+- http://127.0.0.1:8080/
+- http://localhost:8080/
+- http://laravel.local:8080/
+- http://www.laravel.local:8080/
 
 Credentials:
 - System    : PostgreSQL
