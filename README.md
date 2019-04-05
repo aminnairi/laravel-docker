@@ -60,3 +60,9 @@ $ docker-compose down # all users
 $ make shell # OS X & GNU/Linux users
 $ docker-compose exec php bash # all users
 ```
+
+You are now a Laravel Artisan. Try some commands.
+
+```console
+$ php artisan help
+```
