@@ -16,7 +16,7 @@ $ cd my-laravel-project
 
 ## DNS configuration (optional)
 ```console
-$ vim /etc/hosts
+$ sudo vim /etc/hosts
 ```
 
 Append this line at the end.
