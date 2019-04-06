@@ -92,8 +92,8 @@ This will stop the database, PHP & the NGINX servers.
 ## Laravel Artisan Commands
 
 ```console
-$ make shell                    # OS X & GNU/Linux users
-$ docker-compose exec php bash  # all users
+$ make shell                                    # OS X & GNU/Linux users
+$ docker-compose exec -u 1000:1000 php bash     # all users
 ```
 
 You are now a Laravel Artisan. Try some commands.
