@@ -111,4 +111,4 @@ $ make update               # OS X & GNU/Linux users
 $ git pull origin master    # all users
 ```
 
-The `laravel` folder will remain untouched. Only Docker that are listed in this repository will be updated.
+The `laravel` folder will remain untouched. Only Docker related files that are listed in this repository will be updated.
