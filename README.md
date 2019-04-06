@@ -33,7 +33,8 @@ $ sudo $EDITOR /etc/hosts                       # OS X & GNU/Linux users
 Replace `$EDITOR` with you favorite text editor. Append this line at the end.
 
 ```
-127.0.0.1   laravel.local   www.laravel.local
+127.0.0.1   laravel.local           www.laravel.local
+127.0.0.1   database.laravel.local
 ```
 
 This will make you able to access your website from either http://laravel.local/ or http://www.laravel.local/.
@@ -64,6 +65,7 @@ Database Administration | http://127.0.0.1:8080/ | No
 Database Administration | http://localhost:8080/ | No
 Database Administration | http://laravel.local:8080/  | Yes
 Database Administration | http://www.laravel.local:8080/  | Yes
+Database Administration | http://database.laravel.local/  | Yes
 
 Database administration's credentials:
 
