@@ -6,6 +6,7 @@
 - NGINX configured to work in coordination with PHP FPM.
 - Laravel installer with a fix for the Laravel's logs & cache folder permissions issues.
 - PostgreSQL configured with automatic creation of the necessary database.
+- Elegants urls like laravel.local & database.laravel.local for easily test & debug your application.
 
 ## Requirements
 
