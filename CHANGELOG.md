@@ -1,3 +1,6 @@
+**0.2.1**:
+- Fixed an issue where the generated files from the php artisan console had the wrong permissions.
+
 **0.2.0**:
 - Added a proxy for using the database.laravel.local domain to access the database administration panel.
 
