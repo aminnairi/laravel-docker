@@ -81,3 +81,10 @@ Credentials:
 - Username  : root
 - Password  : root
 - Database  : laravel
+
+## Template Update
+
+```console
+$ make update # OS X & GNU/Linux users
+$ git pull origin master # all users
+```

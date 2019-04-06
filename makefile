@@ -14,3 +14,6 @@ stop:
 
 shell:
 	docker-compose exec php bash
+
+update:
+	git pull origin master
