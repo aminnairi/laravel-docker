@@ -23,7 +23,7 @@ services:
     container_name: nginx
     depends_on:
       - php
-    image: nginx
+    build: nginx
     ports:
       - 80:80
     volumes:
