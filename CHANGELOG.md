@@ -1,3 +1,6 @@
+**0.3.0**:
+- Server responses are now compressed if the client supports the GZIP algorithm.
+
 **0.2.1**:
 - Fixed an issue where the generated files from the php artisan console had the wrong permissions.
 
