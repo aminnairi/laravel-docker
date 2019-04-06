@@ -54,24 +54,26 @@ $ make start                                        # OS X & GNU/Linux users
 $ docker-compose up -d php nginx postgres adminer   # all users
 ```
 
-Go to either on of these addresses to display your **website**:
-- http://127.0.0.1/
-- http://localhost/
-- http://laravel.local/             (requires DNS configuration)
-- http://www.laravel.local/         (requires DNS configuration)
+Target | IP Address/Domain | Requires DNS Configuration
+---|---|---
+Website | http://127.0.0.1/ | No
+Website | http://localhost/ | No
+Website | http://laravel.local/ | Yes
+Website | http://www.laravel.local/ | Yes
+Database Administration | http://127.0.0.1:8080/ | No
+Database Administration | http://localhost:8080/ | No
+Database Administration | http://laravel.local:8080/  | Yes
+Database Administration | http://www.laravel.local:8080/  | Yes
 
-Go to either on of these addresses to display your **database's admin panel**:
-- http://127.0.0.1:8080/
-- http://localhost:8080/
-- http://laravel.local:8080/        (requires DNS configuration)
-- http://www.laravel.local:8080/    (requires DNS configuration)
+Database administration's credentials:
 
-With these credentials:
-- System    : PostgreSQL
-- Server    : postgres
-- Username  : root
-- Password  : root
-- Database  : laravel
+Field | Value
+---|---
+System | PostgreSQL
+Server | postgres
+Username | root
+Password | root
+Database | laravel
 
 ## Stop
 
