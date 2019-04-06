@@ -1,9 +1,9 @@
-.PHONY: start build install stop
+.PHONY: build install start stop shell update
 
 build:
 	docker-compose build
 
-install:
+install: build
 	docker-compose run --rm install
 
 start: build
@@ -12,8 +12,8 @@ start: build
 stop:
 	docker-compose down --volumes --remove-orphans
 
-shell:
+shell: start
 	docker-compose exec php bash
 
-update:
+update: stop
 	git pull origin master
