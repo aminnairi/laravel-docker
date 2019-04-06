@@ -10,12 +10,14 @@
 
 ## Requirements
 
-- A text editor.
-- A command prompt or a terminal emulator.
-- [Git command line interface](https://git-scm.com/).
-- [Docker](https://www.docker.com/).
-- [Docker Compose](https://docs.docker.com/compose/).
-- [GNU/Make](https://www.gnu.org/software/make/) (optional, recommended).
+Requirement | Optional
+---|---
+Text editor | No
+Command prompt / Terminal emulator | No
+[Git command line interface](https://git-scm.com/) | No
+[Docker](https://www.docker.com/) | No
+[Docker Compose](https://docs.docker.com/compose/) | No
+[GNU/Make](https://www.gnu.org/software/make/) | Yes
 
 ## Installation
 
