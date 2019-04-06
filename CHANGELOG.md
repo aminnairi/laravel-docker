@@ -1,3 +1,6 @@
+**0.2.0**:
+- Added a proxy for using the database.laravel.local domain to access the database administration panel.
+
 **0.1.0**:
 - Adminer's server field is now automatically pre-field with the correct name of the PostgreSQL's container.
 
