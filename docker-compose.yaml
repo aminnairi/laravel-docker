@@ -40,7 +40,6 @@ services:
       POSTGRES_USER: root
       POSTGRES_DB: laravel
 
-  
   adminer:
     container_name: adminer
     depends_on:
