@@ -1,4 +1,4 @@
-.PHONY: build install start stop shell update
+.PHONY: build install start stop shell update restart
 
 build:
 	docker-compose build
@@ -17,3 +17,5 @@ shell: start
 
 update: stop
 	git pull origin master
+
+restart: stop start
