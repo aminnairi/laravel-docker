@@ -1,3 +1,10 @@
+**0.4.0**:
+- New Make command to easily restart the containers.
+- Unecessary public exposed ports for postgres & php-fpm have been removed in order to preventing further conflicts with other userland applications.
+- Created a php user and allowing the www-data make sure that the www-data and php users are able to read/write files in the laravel folders.
+- The user definition in the makefile has been removed.
+- The database persistence is now in place and allows to safely stop the container and shutdown the computer without losing the database informations stored.
+
 **0.3.0**:
 - Server responses are now compressed if the client supports the GZIP algorithm.
 
