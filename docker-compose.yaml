@@ -14,8 +14,6 @@ services:
     container_name: php
     build: php
     working_dir: /usr/share/nginx/html
-    ports:
-      - 9000:9000
     volumes:
       - ./laravel:/usr/share/nginx/html
 
