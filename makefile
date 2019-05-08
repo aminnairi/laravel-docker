@@ -13,7 +13,7 @@ stop:
 	docker-compose down --volumes --remove-orphans
 
 shell: start
-	docker-compose exec -u 1000:1000 php bash
+	docker-compose exec php bash
 
 update: stop
 	git pull origin master

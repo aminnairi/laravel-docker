@@ -39,6 +39,8 @@ services:
       POSTGRES_PASSWORD: root
       POSTGRES_USER: root
       POSTGRES_DB: laravel
+    volumes:
+      - ./database:/var/lib/postgresql/data
 
   adminer:
     container_name: adminer
